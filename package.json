@@ -1,0 +1,37 @@
+{
+  "name": "Kondensator",
+  "version": "0.0.1",
+  "description": "Flux/React true to the Facebook implementation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development webpack-dev-server --progress --colors",
+    "build": "NODE_ENV=production webpack --progress --colors"
+  },
+  "author": {
+    "name": "accosine.com"
+  },
+  "contributors": [
+    {
+      "name": "Simon Bugert",
+      "email": "simon.bugert@gmail.com"
+    },
+    {
+      "name": "Duncan Kolba",
+      "email": "duncankolba@gmail.com"
+    }
+  ],
+  "license": "BSD",
+  "devDependencies": {
+    "babel-core": "^4.7.3",
+    "babel-loader": "^4.1.0",
+    "flux": "^2.0.1",
+    "keymirror": "^0.1.1",
+    "object-assign": "^2.0.0",
+    "react": "^0.12.2",
+    "react-hot-loader": "^1.1.7",
+    "react-router": "^0.12.4",
+    "webpack": "^1.7.2",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
