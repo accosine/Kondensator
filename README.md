@@ -6,15 +6,15 @@ A boilerplate for building React apps with ES6 and webpack.
 
 * React 0.13
 * Compilation of ES6 & JSX to ES5
-* webpack bundling with html, css & sass loaders
-* Basic flux architecture with app actions, stores and example web API usage
+* webpack bundling with html
+* Basic flux architecture with app actions and stores
 
 ## Getting started
 
 Clone the project and remove the git repository:
 
 ```bash
-git clone --depth=1 https://github.com/badsyntax/react-seed.git my-project
+git clone --depth=1 https://github.com/accosine/Kondensator.git my-project
 cd my-project
 rm -rf .git && git init
 ```
@@ -30,10 +30,6 @@ rm -rf .git && git init
 
 ```js
 // Filename: Menu.jsx
-
-'use strict';
-
-import './_Menu.scss';
 
 import React from 'react';
 import MenuItem from '../MenuItem/MenuItem';
@@ -72,27 +68,6 @@ Menu.propTypes = {
 export default Menu;
 ```
 
-### Using mixins:
-
-It's a bit awkward to use mixins with ES6 classes. You'll need to use a mixin helper:
-
-```js
-import mixin from 'util/mixin';
-
-let draggable = {
-  drag() { /* … */ }
-};
-
-let droppable = {
-  drop() { /* … */ }
-};
-
-class Dialog extends mixin(React.Component, draggable, droppable) {
-  /* … */
-}
-```
-
-Alternatively, just use `React.createClass`.
 
 ## HTML files
 
@@ -125,10 +100,6 @@ Publishing package:
 
 ## Credits
 
-This project was initially forked from https://github.com/tcoopman/react-es6-browserify
+This project was initially forked from https://github.com/badsyntax/react-seed
+which in turn was forked from https://github.com/tcoopman/react-es6-browserify
 
-## License
-
-Copyright (c) 2015 Richard Willis
-
-MIT (http://opensource.org/licenses/MIT)
